@@ -849,7 +849,7 @@ class ChatSetupWelcomeContent extends Disposable {
 	}
 
 	private create(): void {
-		const markdown = this._register(this.instantiationService.createInstance(MarkdownRenderer, {}));
+		const markdown = this.instantiationService.createInstance(MarkdownRenderer, {});
 
 		// Header
 		{
